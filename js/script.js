@@ -19,8 +19,8 @@ function mainFunction(callback){
 
     //закоментить
     //закрить открить страницу заново ;)
-    let number = +prompt('Введите число', 1);
-    let degree = +prompt('Введите степень', 1);
+    let number = +prompt('Введите число');
+    let degree = +prompt('Введите число 2(степень)');
 
     callback(number, degree);
 }
@@ -49,7 +49,7 @@ function division(num, deg){
 
 function modulo(num, deg){
 
-    let answerMod = num * deg;
+    let answerMod = num % deg;
 
     return alert(`${answerMod}`);
 }
